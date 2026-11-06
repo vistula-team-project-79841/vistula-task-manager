@@ -14,6 +14,8 @@ A browser-based task manager for the Vistula University team assignment. The app
 - `index.html` contains the responsive user interface.
 - `app.js` calls the Supabase REST API and implements CRUD operations.
 - `config.json` contains the project URL, publishable key and required `tasks` table name.
+- `contribution.html` displays the contributor page added by student `79822` through a Pull Request.
+- `contribution.json` contains the contributor student ID supplied by student `79822`.
 - `README.md` documents the project and collaboration workflow.
 
 ## Data model
@@ -40,18 +42,16 @@ DELETE /rest/v1/tasks?id=eq.<id>
 
 Every request uses the publishable key from `config.json` in the `apikey` header. Supabase RLS policies remain the actual authorization boundary.
 
-## Team workflow
+## Team collaboration
 
-Each student keeps a separate `vistula-task-manager` repository and a separate Supabase project. To complete the collaboration part of the assignment:
+The collaboration is between student `79841` and student `79822`. Each student keeps a separate public repository and contributes the required `contribution.html` and `contribution.json` files through a Pull Request.
 
-1. Student A forks or branches from Student B's repository, makes a small useful change and opens a pull request.
-2. Student B reviews and merges that pull request.
-3. Student B then makes a different useful change in Student A's repository through a second pull request.
-4. Student A reviews and merges the second pull request.
+- Incoming contribution from student `79822`: https://github.com/vistula-team-project-79841/vistula-task-manager/pull/1
+- Outgoing contribution from student `79841`: https://github.com/vistula-team-project-79822/vistula-task-manager/pull/1
+- Live contributor page: https://vistula-team-project-79841.github.io/vistula-task-manager/contribution.html
+- Live contributor JSON: https://vistula-team-project-79841.github.io/vistula-task-manager/contribution.json
 
-This repository belongs only to student `79841`. A partner must sign in to their own GitHub and Supabase accounts before any work is done in their repository.
-
-The two collaboration Pull Request links will be added here after both students complete and merge the required contributions. The repository owner must not create `contribution.html` or `contribution.json` directly.
+The contributor files in this repository were authored by student `79822` and merged through the incoming Pull Request. They were not created directly by the repository owner.
 
 ## Local use
 
